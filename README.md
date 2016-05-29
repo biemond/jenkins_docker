@@ -55,6 +55,7 @@ or with persistence
 - docker run -i -t --privileged -p 8080:8080 -p 50000:50000 -e DOCKER_STORAGE_DRIVER='-s btrfs'  --name jenkins_server -v /vagrant/jenkins_persistence:/var/jenkins_home jenkins/build-jenkins:latest
 
 ## activate jenkins 2
+- get password from the output or do this
 - docker exec -i -t jenkins_server bash
 - cat /var/jenkins_home/secrets/initialAdminPassword and get password for enable jenkins
 - Use admin with that password for the slaves
