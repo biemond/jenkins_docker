@@ -1,0 +1,6 @@
+[ol7_UEKR4]
+name=Latest Unbreakable Enterprise Kernel Release 4 for Oracle Linux \$releasever (\$basearch)
+baseurl=http://public-yum.oracle.com/repo/OracleLinux/OL7/UEKR4/\$basearch/
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-oracle
+gpgcheck=1
+enabled=1

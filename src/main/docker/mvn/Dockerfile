@@ -1,6 +1,6 @@
 # Pull base image
 # ---------------
-FROM centos:7
+FROM oraclelinux:latest
 
 # Maintainer
 # ----------

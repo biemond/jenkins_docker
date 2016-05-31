@@ -10,6 +10,7 @@ MAINTAINER Edwin Biemond <biemond@gmail.com>
 # https://github.com/jenkinsci/docker for jenkins
 # https://github.com/docker-in-practice/jenkins for jenkins swarm
 
+COPY uek4.repo /etc/yum.repos.d/uek4.repo
 COPY docker.repo /etc/yum.repos.d/docker.repo
 
 ENV DOCKER_DAEMON_ARGS "-D --insecure-registry=demo.example.com:5555"

@@ -29,6 +29,7 @@ RUN	useradd -d /home/jenkins_master -u 1212 -s /bin/bash jenkins_master && \
 	echo '%jenkins_master ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers && \
 	sed -i "s/^.*requiretty/#Defaults requiretty/" /etc/sudoers
 
+COPY uek4.repo /etc/yum.repos.d/uek4.repo
 COPY docker.repo /etc/yum.repos.d/docker.repo
 # setup docker daemon
 COPY wrapdocker /usr/local/bin/wrapdocker
